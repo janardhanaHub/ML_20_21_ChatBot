@@ -8,7 +8,7 @@ def greeting():
         "Hey hello! I am your chatbot I can help you. May I know your name? : "
     ]
     print(random.choice(responses))
-def wish(name):
+def wishday(name):
     time_now = datetime.datetime.now().hour
     if time_now < 12:
         print("Nice to meet you " + name + ", Good morning.")
@@ -42,6 +42,6 @@ def bot():
     except:
       print("Enter a Valid Name")
       greeting()
-    wish(name)
+    wishday(name)
     menu()
 bot()
