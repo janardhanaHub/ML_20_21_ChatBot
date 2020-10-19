@@ -35,7 +35,7 @@ def menu():
             webbrowser.open("https://www.amazon.in/", new = 1)
         else:
             print("Invalid input")
-def bot():
+def greetbot():
     greeting()
     try:
       name = input()
@@ -44,4 +44,4 @@ def bot():
       greeting()
     wishday(name)
     menu()
-bot()
+greetbot()
